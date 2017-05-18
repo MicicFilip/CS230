@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/
+    TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Uspesno!!!</title>
+    </h:head>
+    <h:body>
+        Novi Internet student je uspesno generisan
+        <h:panelGrid columns="2" border="1" cellspacing="0">
+            <h:outputLabel for="ime" value="Ime"/>
+            <h:outputText id="ime" value="#{intStudent.ime}"/>
+            <h:outputLabel for="prezime" value="Prezime"/>
+            <h:outputText id="prezime" value="#{intStudent.prezime}"/>
+            <h:outputLabel for="email" value="Email Adresa"/>
+            <h:outputText id="email" value="#{intStudent.email}"/>
+            <h:outputLabel for="brIndex" value="Broj Indexa"/>
+            <h:outputText id="brIndex" value="#{intStudent.brIndex}"/>
+        </h:panelGrid>
+    </h:body>
+</html>
