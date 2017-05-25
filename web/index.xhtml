@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel for="msgText" value="Izaberite tacan odgovor: "/>
+                <!--                <h:inputText id="msgText"
+                                             value="#{jmsPorukaModel.msgText}"/>-->
+                <h:selectOneRadio value="#{jmsPorukaModel.msgText}">
+                    <f:selectItem itemValue="OOP" itemLabel="Java je OOP jezik" />
+                    <f:selectItem itemValue="Procedural" itemLabel="Java je proceduralni jezik" />
+                </h:selectOneRadio>
+                <h:panelGroup/>
+                <h:commandButton value="Posalji"
+                                 action="#{jmsPorukaController.sendMsg()}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
