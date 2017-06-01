@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Generisan JSON pomoću JSON-P API objektnog modela</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel for="parsiranJson" value="Parsiran JSON"/>
+                <h:inputTextarea
+                    value="#{jsonModelApiZrno.jsonStr}" rows="4"/>
+                <h:panelGroup/>
+                <h:commandButton value="Potvrdi" action="#{jsonModelApiZrno.parseJson()}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
