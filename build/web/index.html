@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Websocket</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="websocket.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Java Websocket Home</h1>
+            <p>Welcome to the Java WebSocket Home. Click the Add a student button to
+                start adding students.</p>
+            <br/>
+            <div id="addDevice">
+                <div class="button"> <a href="#" OnClick="showForm()">Add a
+                        student</a> </div>
+                <form id="addDeviceForm">
+                    <h3>Add a new device</h3>
+                    <span>Ime: <input type="text" name="ime"
+                                      id="device_name"></span>
+                                      
+                    <span>Prezime: <input type="text" name="prezime"
+                                      id="device_surname"></span>
+                    <span>Fakultet:
+                        <select id="device_type">
+                            <option name="type" value="FIT">FIT</option>
+                            <option name="type"
+                                    value="FMU">FMU</option>
+                            <option name="type" value="FDU">FDU</option>
+                            
+                        </select></span>
+                    <input type="button" class="button" value="Add"
+                           onclick=formSubmit()>
+                    <input type="reset" class="button" value="Cancel"
+                           onclick=hideForm()>
+                </form>
+            </div>
+            <br/>
+            <h3>Currently connected Students:</h3>
+            <div id="content">
+            </div>
+        </div>
+    </body>
+</html>
